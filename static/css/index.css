@@ -117,10 +117,13 @@ body {
 .results-carousel .item {
   margin: 5px;
   overflow: hidden;
-  border: 1px solid #bbb;
+  /* border: 1px solid #bbb; */
   border-radius: 10px;
-  padding: 0;
-  font-size: 0;
+  padding: 2px;
+  font-size: 24px;
+  text-align: center;
+  /* font-weight: bold; */
+  /* font-style: italic; */
 }
 
 .results-carousel video {
@@ -154,4 +157,13 @@ body {
 }
 #interpolation-image-wrapper img {
   border-radius: 5px;
+}
+
+
+.paragraph {
+  text-align: justify;
+}
+
+.textsc {
+  font-variant-caps: small-caps;
 }
