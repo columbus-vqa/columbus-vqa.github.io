@@ -91,7 +91,7 @@
           <h1 class="title is-1 publication-title">COLUMBUS: Evaluating <u>CO</u>gnitive <u>L</u>ateral <u>U</u>nderstanding through <u>M</u>ultiple-choice re<u>BUS</u>es</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              Koen Kraaijveld<sup>1</sup>,</span>
+              <a href="https://www.linkedin.com/in/koen-kraaijveld/">Koen Kraaijveld</a><sup>1</sup>,</span>
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=npRM7lYAAAAJ&hl=en&authuser=1">Yifan Jiang</a><sup>2</sup>,</span>
             <span class="author-block">
@@ -335,7 +335,7 @@
           <br><br>
         </p>
 
-        <img src="static/images/rule_taxonomy.png">
+        <img src="static/images/rule_taxonomy_poster.png">
       </div>
       <br/>
     </div>
@@ -363,7 +363,7 @@
             puzzle’s correct answer and its visible elements.
           </p>
           
-          <img src="static/images/pipeline_overview.png">
+          <img src="static/images/methodology_v2.png">
         </div>
       </div>
       <!--/ Visual Effects. -->
@@ -378,7 +378,7 @@
         </p>
         <br>
         <div class="columns is-centered">
-          <img src="static/images/key_statistics_table.png">
+          <img src="static/images/table_key_statistics_v2.png">
         </div>
       </div>
     </div>
@@ -397,21 +397,21 @@
           All models are evaluated in a zero-shot setting using standard hyperparameter values.
           <br><br>
           Generally, the closed-source and larger open-source models perform best on both partitions, while the small, 
-          non-instruction-tuned models perform near-randomly and have strong biases to certain answers (typically A or D).
+          non-instruction-tuned models perform near-randomly.
           The best model for each partition
           is consistently GPT-4o, which is the expected result. Yet,
           none of the models surpass human accuracy, with average
-          gaps of 45.15% on <span class="textsc">COLUMBUS-text</span> and 35.75% on
+          gaps of 38.17% on <span class="textsc">COLUMBUS-text</span> and 30.64% on
           <span class="textsc">COLUMBUS-icon</span>.  
           <br><br>
-          Forward chaining yields marginal improvement on GPT-4o(-mini) while boosting Gemini performance greatly (6% to 17%). 
-          On the contrary, backward chaining yields an 18.3% and 25.15% drop in accuracy for GPT-4o and GPT-4o-mini,
+          Forward chaining yields a negligible effect on GPT-4o (-1.88%) and Gemini (+2.26%), averaged across both models and paritions. 
+          On the contrary, backward chaining yields an 14.1% and 22.86% drop in accuracy for GPT-4o and GPT-4o-mini,
           averaged across the two partitions.
         </p>
       </div>
       <div class="column">
         <div class="content">
-          <img src="static/images/main_results_table.png" width="90%" height="90%">
+          <img src="static/images/table_main_results_v2.png" width="95%" height="95%">
         </div>
       </div>
     </div>
@@ -426,7 +426,7 @@
           For both <span class="textsc">COLUMBUS-text</span> (left plot)
           <span class="textsc">COLUMBUS-icon</span> (right plot), we generally see that adding increasingly more information results in better performance.
         </p>
-          <img src="static/images/model_sensitivity_graphs.png">
+          <img src="static/images/plot_ground_truth_prompts_v2.png">
       </div>
       <div class="column">
         <h2 class="title is-4">VLM Generation of Puzzles</h2>
@@ -437,7 +437,7 @@
         </p>
         <br>
         <div class="columns is-centered">
-          <img src="static/images/rebus_generation_images.png" width="80%" height="80%">
+          <img src="static/images/rebus_images_comparison.png" width="100%" height="100%">
         </div>
       </div>
     </div>
@@ -452,7 +452,7 @@
             while the GPT-4o’s performance is similar on the two partitions, specific rules are more difficult for this model when represented 
             as text (e.g., repetition rules). In contrast, others are more challenging when presented as icons (e.g., size).
           </p>
-          <img src="static/images/gpt_rule_analysis_graph.png">
+          <img src="static/images/rule_based_analysis_plot_v2.png">
         </div>
       </div>
     </div>
